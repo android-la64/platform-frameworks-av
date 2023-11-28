@@ -53,6 +53,9 @@ prebuilt_etc {
         arm64: {
             src: "seccomp_policy/mediaswcodec-arm64.policy",
         },
+        loongarch64: {
+            src: "seccomp_policy/mediaswcodec-loongarch64.policy",
+        },
         x86: {
             src: "seccomp_policy/mediaswcodec-x86.policy",
         },
@@ -117,7 +120,6 @@ cc_binary {
     ],
 
     // OMX interfaces force this to stay in 32-bit mode;
-    compile_multilib: "32",
 
     init_rc: ["android.hardware.media.omx@1.0-service.rc"],
 
@@ -142,6 +144,9 @@ prebuilt_etc {
         },
         arm64: {
             src: "seccomp_policy/mediacodec-arm64.policy",
+        },
+        loongarch64: {
+            src: "seccomp_policy/mediacodec-loongarch64.policy",
         },
         x86: {
             src: "seccomp_policy/mediacodec-x86.policy",

@@ -13,13 +13,13 @@ cc_library_static {
     srcs: [
         "ColorConvert.cpp",
         "GraphicBufferListener.cpp",
-        "IntrinsicBlurFilter.cpp",
+        //"IntrinsicBlurFilter.cpp",
         "MediaFilter.cpp",
-        "RSFilter.cpp",
-        "SaturationFilter.cpp",
-        "saturationARGB.rscript",
+        //"RSFilter.cpp",
+        //"SaturationFilter.cpp",
+        //"saturationARGB.rscript",
         "SimpleFilter.cpp",
-        "ZeroFilter.cpp",
+        //"ZeroFilter.cpp",
     ],
 
     include_dirs: [
