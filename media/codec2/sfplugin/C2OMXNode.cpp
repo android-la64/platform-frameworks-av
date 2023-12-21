@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-#ifdef __LP64__
+#if defined(__LP64__) && !defined(__loongarch__)
 #define OMX_ANDROID_COMPILE_AS_32BIT_ON_64BIT_PLATFORMS
 #endif
 
