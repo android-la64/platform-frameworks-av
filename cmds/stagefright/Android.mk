@@ -219,7 +219,7 @@ LOCAL_SHARED_LIBRARIES := \
         libmedia_omx \
         libui \
         libgui \
-        libRScpp \
+        #libRScpp \
 
 LOCAL_C_INCLUDES:= \
         frameworks/av/media/libstagefright \

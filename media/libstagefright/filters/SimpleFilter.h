@@ -33,11 +33,11 @@ public:
 
     virtual status_t configure(const sp<AMessage> &msg);
 
-    virtual status_t start() = 0;
-    virtual void reset() = 0;
-    virtual status_t setParameters(const sp<AMessage> &msg) = 0;
+    virtual status_t start() { return OK; };
+    virtual void reset() {};
+    virtual status_t setParameters(const sp<AMessage> &msg) { return OK; };
     virtual status_t processBuffers(
-            const sp<MediaCodecBuffer> &srcBuffer, const sp<MediaCodecBuffer> &outBuffer) = 0;
+            const sp<MediaCodecBuffer> &srcBuffer, const sp<MediaCodecBuffer> &outBuffer) { return OK; };
 
 protected:
     int32_t mWidth, mHeight;
