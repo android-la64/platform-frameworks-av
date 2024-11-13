@@ -90,6 +90,9 @@ prebuilt_etc {
         arm64: {
             src: "seccomp_policy/android.hardware.media.c2-default-arm64.policy",
         },
+        loongarch64: {
+            src: "seccomp_policy/android.hardware.media.c2-default-loongarch64.policy",
+        },
         riscv64: {
             src: "seccomp_policy/android.hardware.media.c2-default-riscv64.policy",
         },
